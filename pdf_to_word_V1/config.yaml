@@ -1,0 +1,38 @@
+# PaddleOCR PDF 转 Word/Markdown 配置文件
+
+# 输出目录
+output_dir: "./output"
+
+# 是否启用表格识别（建议开启，效果很好）
+enable_table: true
+
+# 是否启用 OCR 文字识别
+enable_ocr: true
+
+# 是否启用版面分析
+enable_layout: true
+
+# 语言设置
+# ch: 中文, en: 英文, 支持多语言混合
+lang: "ch"
+
+# 是否使用 GPU 加速（如果没有 GPU 保持 false）
+use_gpu: false
+
+# 高级选项（可选）
+# 以下参数可以根据需要调整
+
+# OCR 检测模型置信度阈值
+# det_limit_side_len: 960
+# det_db_thresh: 0.3
+
+# 识别模型批处理大小
+# rec_batch_num: 6
+
+# 表格识别相关
+# table_max_len: 488
+# table_algorithm: TableAttn
+
+# 版面分析相关
+# layout_score_threshold: 0.5
+

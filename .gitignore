@@ -3,6 +3,7 @@ venv/
 env/
 ENV/
 .venv/
+paddleocr_env/
 
 # Python 缓存文件
 __pycache__/
@@ -37,6 +38,9 @@ desktop.ini
 
 # PaddleX 缓存
 .paddlex/
+
+# PaddleOCR 子模块
+pdf_to_word_V1/PaddleOCR/
 
 # 带空格的特殊目录
 *" "/
