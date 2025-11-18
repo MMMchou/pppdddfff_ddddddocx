@@ -1,0 +1,35 @@
+# PDF 转 DOCX 配置文件
+
+# 基础路径配置
+input_dir: "pdf_data"
+output_dir: "output"
+
+# pdf2docx 转换参数
+conversion:
+  # 是否解析网格线驱动的表格（lattice mode）
+  # 如果文档有复杂线条/装饰线，可能误判为表格，建议设为 false
+  parse_lattice_table: true
+  
+  # 是否启用多进程（对多页文档有效）
+  multi_processing: false
+  
+  # 其他可选参数（需要时取消注释）
+  # cpu_count: 4
+  # page_margin: 50
+
+# 调试选项
+debug:
+  # 是否生成调试文件（layout JSON, debug PDF）
+  enable: true
+  
+  # 是否保存详细日志
+  verbose: true
+
+# 错误处理策略
+error_handling:
+  # 当转换失败时，是否尝试 fallback 配置（关闭 parse_lattice_table）
+  enable_fallback: true
+  
+  # 是否在失败后继续处理其他文件
+  continue_on_error: true
+
